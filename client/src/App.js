@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <a href="http://localhost:8080/h2-console/">View Database</a>
+          <a href="http://localhost:9090/h2-console/">View Database</a>
           <CustomerForm/>
           <Customers/>
         </header>

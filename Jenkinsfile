@@ -60,7 +60,7 @@ pipeline {
                                     dir('$PWD/jenkins.docker.spring.react_person-database/client') {
                                         sh "npm install"
                                         sh "npm install forever"
-                                        sh "./node_modules/forever/bin/forever start -c 'npm start'"
+                                        sh "./node_modules/forever/bin/forever start -c npm start"
                                     }
                                 }
                             }
