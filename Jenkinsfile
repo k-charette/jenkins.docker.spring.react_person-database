@@ -6,7 +6,7 @@ pipeline {
                 stage('Front End Dependencies') {
                     agent {
                         docker {
-                            image 'timbru31/node-alpine-git:latest' 
+                            image 'node:lts-alpine3.12' 
                             args '-v /root/.m2:/root/.m2 -p 3000:3000' 
                         }
                     }
