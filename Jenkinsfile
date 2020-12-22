@@ -1,13 +1,6 @@
 pipeline {
     agent none
     stages {
-        stage('Set Up') {
-            steps {
-                script {
-                    sh 'rm -rf jenkins.docker.spring.react_person-database'
-                }
-            }
-        }
         stage('SCM Checkout') {
             steps {
                 sh 'git clone https://github.com/k-charette/jenkins.docker.spring.react_person-database $PWD/jenkins.docker.spring.react_person-database'        
