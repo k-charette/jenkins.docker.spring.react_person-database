@@ -7,7 +7,7 @@ pipeline {
                     agent {
                         docker {
                             image 'timbru31/node-alpine-git:latest' 
-                            args '-v /root/.m2:/root/.m2' 
+                            args '-v /root/.m2:/root/.m2 -p 3000:3000' 
                         }
                     }
                     stages {
@@ -23,7 +23,7 @@ pipeline {
                                 sh 'git clone https://github.com/k-charette/jenkins.docker.spring.react_person-database $PWD/jenkins.docker.spring.react_person-database'        
                             }
                         }
-                        stage('Compile-Package-Test') {
+                        stage('Build') {
                             steps {
                                 script {
                                     dir('$PWD/jenkins.docker.spring.react_person-database/client') {
