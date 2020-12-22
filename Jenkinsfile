@@ -17,6 +17,7 @@ pipeline {
             agent {
                 docker { 
                     image 'timbru31/node-alpine-git:latest' 
+                    args '-v /root/.m2:/root/.m2' 
                 }
             }
             steps {
