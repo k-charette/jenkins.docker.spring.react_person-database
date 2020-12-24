@@ -20,7 +20,7 @@ pipeline {
                         }
                         stage('SCM Checkout') {
                             steps {
-                                sh 'git clone https://github.com/k-charette/jenkins.docker.spring.react_person-database $PWD/jenkins.docker.spring.react_person-database'        
+                                sh 'git clone https://github.com/k-charette/jenkins.docker.spring.react_person-database'        
                             }
                         }
                         stage('Compile-Package-Test') {
@@ -59,8 +59,7 @@ pipeline {
                                 script {
                                     dir('$PWD/jenkins.docker.spring.react_person-database/client') {
                                         sh "npm install"
-                                        sh "npm start"
-                                        pause
+                                        sh "setsid npm start >/dev/null 2>&1 < /dev/null &"
                                     }
                                 }
                             }
