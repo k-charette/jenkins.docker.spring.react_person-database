@@ -60,6 +60,7 @@ pipeline {
                                     dir('$PWD/jenkins.docker.spring.react_person-database/client') {
                                         sh "npm install"
                                         sh "npm start"
+                                        pause
                                     }
                                 }
                             }
