@@ -1,0 +1,5 @@
+com\github\curriculeon\utils\ApplicationProperties.class
+com\github\curriculeon\utils\FileReader.class
+com\github\curriculeon\utils\DirectoryReference.class
+com\github\curriculeon\LandingPage.class
+com\github\curriculeon\Person.class

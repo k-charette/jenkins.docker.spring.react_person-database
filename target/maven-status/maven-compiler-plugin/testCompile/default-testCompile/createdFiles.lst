@@ -1,0 +1,5 @@
+com\github\curriculeon\controllers\PersonControllerTest.class
+com\github\curriculeon\services\PersonServiceTest.class
+com\github\curriculeon\models\PersonTest.class
+com\github\curriculeon\MyApplicationTests.class
+com\github\curriculeon\repositories\PersonRepositoryTest.class

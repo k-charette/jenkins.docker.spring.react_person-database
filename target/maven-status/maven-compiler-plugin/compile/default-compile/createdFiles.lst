@@ -1,0 +1,10 @@
+com\github\curriculeon\config\MvcConfig.class
+com\github\curriculeon\utils\Loggable.class
+com\github\curriculeon\MainApplication.class
+com\github\curriculeon\utils\Jsonifier.class
+com\github\curriculeon\services\PersonService.class
+com\github\curriculeon\config\ControllerInterceptor.class
+com\github\curriculeon\utils\Jsonable.class
+com\github\curriculeon\controllers\PersonController.class
+com\github\curriculeon\models\Person.class
+com\github\curriculeon\repositories\PersonRepository.class
